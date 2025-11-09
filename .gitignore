@@ -1,0 +1,19 @@
+# Sanal Ortam (Virtual Environment)
+.venv/
+venv/
+*.venv
+
+# Python önbellek dosyaları
+__pycache__/
+*.pyc
+*.pyo
+
+# Oluşturulan RAG Kütüphanesi
+faiss_tck_kutuphanesi/
+
+# VS Code ayarları
+.vscode/
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db

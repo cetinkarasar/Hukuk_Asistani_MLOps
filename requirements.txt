@@ -1,0 +1,7 @@
+streamlit
+# unsloth ve torch, temel Docker imajından gelecek
+langchain
+pypdf
+faiss-cpu
+sentence-transformers
+bitsandbytes
