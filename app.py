@@ -8,11 +8,9 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
-# --- 1. SABİTLER ve AYARLAR ---
 
-# ====> BURAYI DEĞİŞTİRİN <====
 HF_REPO_NAME = "Cetin003/hukuk_model_tck_v1_lora"
-# ===============================
+
 
 PDF_PATH = "data/tck.pdf"
 FAISS_INDEX_PATH = "faiss_tck_kutuphanesi"
@@ -29,8 +27,7 @@ ALPACA_PROMPT = """Aşağıda, bir görevi açıklayan bir talimat (instruction)
 ### Yanıt:
 {}"""
 
-# --- 2. UYGULAMA FONKSİYONLARI (Streamlit Önbellekleme ile) ---
-# Bu fonksiyonlar, ağır modellerin sadece bir kez yüklenmesini sağlar.
+
 
 @st.cache_resource
 def load_generator_model():
